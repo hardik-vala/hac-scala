@@ -7,7 +7,7 @@ package cluster
   * @param elements - Cluster elements.
   * @tparam T - Type of elements.
   */
-case class Cluster[T](id: Int, elements: Iterable[T]) {
+case class Cluster[+T](id: Int, elements: Iterable[T]) {
 
   /**
     * Cluster size.
